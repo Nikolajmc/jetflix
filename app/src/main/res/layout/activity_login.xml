@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Activities.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_gravity="center"
+                android:src="@drawable/jetflix"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="50sp"-->
+<!--                android:textColor="@color/green"-->
+<!--                android:layout_marginTop="250dp"-->
+<!--                android:layout_marginStart="32dp"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textAlignment="center"-->
+<!--                android:text="JETFLIX" />-->
+
+            <EditText
+                android:id="@+id/edtUser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:hint="Username"
+                android:paddingStart="20dp"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:paddingStart="20dp"
+                android:inputType="textPassword" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                style="@android:style/Widget.Button"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/green_button"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Sign in" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:text="Forgot your password?" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:paddingStart="105dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:text="New to Jetflix?" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-21dp"
+                android:paddingStart="215dp"
+                android:textSize="16sp"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:text="Sign up now." />
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
